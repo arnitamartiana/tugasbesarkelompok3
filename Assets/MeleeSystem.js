@@ -17,7 +17,7 @@ if (Input.GetButtonDown("Fire1"))
 		Distance = hit.distance;
 		if ( Distance < MaxDistance);
 		{
-		hit.transform.SendMessage ("ApplyDammage", Damage , SendMessageOptions.DontRequireReceiver);
+	 	   hit.transform.SendMessage ("ApplyDammage", Damage , SendMessageOptions.DontRequireReceiver);
 		}
 	}
 }

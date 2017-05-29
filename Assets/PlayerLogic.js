@@ -12,5 +12,5 @@ function ApplyDammage (Damage : int)
   }
 function Dead()
   {
-    Destroy (gameObject);
+    Debug.Log("Karakter Terbunuh");
   }
