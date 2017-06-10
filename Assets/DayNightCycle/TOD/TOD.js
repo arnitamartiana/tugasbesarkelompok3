@@ -25,6 +25,11 @@ var MiddayTint : Color;
 var SkyBoxMaterial1 : Material;
 var SkyBoxMaterial2 : Material;
 
+var Water : GameObject;
+var IncludeWater = false;
+var WaterNight : Color;
+var WaterDay : Color;
+
 var SunNight : Color;
 var SunDay : Color;
 
@@ -95,5 +100,9 @@ RenderSettings.fogColor = Color.Lerp (MorningFogColor,MiddayFogColor, (Tod/2)-4)
 
 //Tampilan Tengah Hari
 
+}
+
+if (IncludeWater == true){
+	//Water.GetComponent.<Renderer>().Material.SetColor("_horizonColor", Color.Lerp (WaterNight, WaterDay, slider2*2-0.2));
 }
 }
